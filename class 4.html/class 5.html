@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+    <input type="text" pattern="[3-5][abz]{1,}"><!--3ba--><!--3a-->
+<input type="submit"><br>
+ <input type="text" pattern="[3-5][abz]{0,}"><!--3-->
+<input type="submit"><br>
+ <input type="text" pattern="[3-5][abz]{3}"><!--3bbb-->
+<input type="submit"><br>
+ <input type="text" pattern="([3-5][abz]){3}"><!--3a 3b 4a-->
+<input type="submit"><br><br>
+
+ <input type="text" pattern="([0-9A-Z][a-z]){2,3}"><!--Aa4zBd-->
+ <input type="submit"><br><br>
+
+ <label for="">name:</label>
+<input type="text" pattern="M|F"><!--M-->
+ <input type="submit"><br>
+
+<input type="text" pattern="([A-Z][a-zA-Z]){2,}"><!--AbSs-->
+ <input type="submit"><br>
+ <!--name at least 3 letters     start with uppercase letter-->
+ <label for="">name:</label>
+<input type="text" pattern="[A-Z][a-zA-Z]{2,}"><!--Dff-->
+ <input type="submit"><br>
+ <label for="">phone</label>
+ <!--start with 07      next 7 or 8 o r9    exaclty 10 numbers-->
+ <input type="text" pattern="[0][7][879][0-9]{7}"><!--0791234567-->
+ <input type="submit"><br>
+</form>
+</body>
+</html>
