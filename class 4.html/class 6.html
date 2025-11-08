@@ -6,14 +6,57 @@
     <title>Document</title>
 </head>
 <body>
-      <table border="2">
-        <tr>
-            <td rowspan="2" ><ul><li>1</li><li>2</li></ul></td>
-            <td colspan="2"><a href="http://www.google.com">google</a></td>
-            <td rowspan="3" > <img src="flower.jpg" alt="mm" height="70px"></td>
-        </tr>
-        <tr><td>x</td><td>y</td></tr>
-        <tr><td>m</td> <td colspan="2">l</td></tr>
-    </table>
+<form action="">
+    <label for="">email:</label>
+<input type="text" pattern="[a-zA-Z]{1,}[0-9a-zA-Z]{1,}[@][a-zA-Z]{1,}[0-9a-zA-Z]{1,}[.][a-zA-Z]{3}"><!--a1@q3.qwe-->
+<input type="submit"><br>
+<input type="file" multiple>
+<input type="file">
+<input type="submit">
+<br><br><br>
+<label for="">first name</label>
+<input type="text">
+<br>
+<label for="">last name</label>
+<input type="text">
+<br>
+<label for="">email:</label>
+<input type="email" autocomplete="of">
+<input type="submit">
+<br><br><br>
+
+<input list="x">
+<datalist id="x">
+    <option value="c++"></option>
+    <option value="java"></option>
+    <option value="web"></option>
+</datalist>
+<br><br><br>
+<label for="">Birthday:</label>
+<input type="date"><br>
+<label for="">Birthday (date and time):</label>
+<input type="datetime-local" name="" id=""><br>
+<label for="">month of the year (month and year):</label>
+<input type="month"><br>
+<label for="">week of the year(weak and year)</label>
+<input type="week"><br>
+<label for="">daytime(time):</label>
+<input type="time"><br><br>
+<label for="">quantity(between 1 and 10)</label>
+<input type="number" min="1" max="10" step="2"><br>
+<label for="">points:</label>
+<input type="range" min="0" max="10"><!-- you need java sicrebrt to see the number of range-->
+<input type="text" disabled size="10"><br><br>
+<label for="">E-mail</label>
+<input type="email" placeholder="email!@example"><br>
+<label for="">search google</label>
+<input type="search" ><br>
+<label for="">telephone</label>
+<input type="tel"><br>
+<label for="">add your homepage</label>
+<input type="url"><br>
+<input type="submit">
+</form>
+
 </body>
 </html>
