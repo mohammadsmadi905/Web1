@@ -1,0 +1,33 @@
+
+<html>
+   <head>
+      <title>Absolute Positioning with z-index</title>
+      <style type = "text/css">
+      .bgimg   { position: absolute;
+                 top: 0px;
+                 left: 0px;
+                 z-index: 1 }
+      .fgimg   { position: absolute;
+                 top: 25px;
+                 left: 100px;
+                 z-index: 3 }
+      .text    { position: absolute;
+                 top: 25px;
+                 left: 100px;
+                 z-index: 2;
+                 font-size: 20pt;
+                 font-family: tahoma, geneva, sans-serif } 
+      </style>
+   </head>
+   <body>
+      <p><img src = "bgimg.gif" class = "bgimg"
+         alt = "" /></p>
+      
+      <p><img src = "fgimg.gif" class = "fgimg"
+         alt = "" /></p>
+      
+      <p class = "text">Positioned Text</p>
+   </body>
+</html>
+
+
