@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <title>Document</title>
+        <script>
+    
+    
+    //[,,]right   (,,)error  for(in ) dont disblay undefund
+    /*
+ var x=new Array(20,3,,6,-20);//error
+      for(var i in x)
+       document.write('x['+i+']='+x[i]+"<br>"); 
+*/
+    /*
+     var x=new Array(20,3,6,6,-20);
+      for(var i in x)
+       document.write('x['+i+']='+x[i]+"<br>"); 
+      */
+
+   /*
+        var x=new Array();
+       x['name']='ali';
+       x['age']=23;
+       x[2]=40;
+       x[1]=50;
+       for(var i in x)// number befor string
+       document.write('x['+i+']='+x[i]+"<br>");
+      */
+      
+      
+      /*
+      var x=new Array();
+       x[1]=50;
+       x['name']='ali';
+       x['age']=23;
+       for(var i=0;i<x.length;i++)//x[0]=undefund   name  will not disblay
+       document.write(x[i]);
+      */
+       
+       
+       /*
+var x=new Array(5);
+for(var i=0;i<x.length;i++)
+x[i]=parseInt(prompt('x['+i+']'));
+var max=x[0];
+for(var i=0;i<x.length;i++)
+if(max<x[i])
+max=x[i];
+document.write(max);
+*/
+
+
+
+/*
+var x=new Array(20,3,6,6,-20);
+var b=x[0];
+for(var i=0;i<x.length;i++)
+if(b<x[i])
+b=x[i];
+document.write(b);
+*/
+
+/*
+var x=[20,3,,6,-2];//var x=[5] ==  x[0]=5; loction have value 5 
+x[1]=20;// ,, undefund
+x[4]='ali';
+x[7]=30;//will be correct
+for(var i=0;i<x.length;i++)
+document.write(x[i]+"<br>");
+//for(var i=0;i<x.length;i++)
+//document.write(x+"<br>");
+*/
+/*
+var x=new Array(5);//  5 undefind
+x[1]=20;
+x[4]='ali';
+x[7]=30;//will be correct
+for(var i=0;i<x.length;i++)
+document.write(x[i]+"<br>");
+*/
+/*
+var x=new Array(20,3,6,6,-2);// (,,) will be sentecs error
+x[1]=20;
+x[4]='ali';
+x[7]=30;//will be correct
+document.write(x+"<br>");
+for(var i=0;i<x.length;i++)
+document.write(x[i]+"<br>");
+*/
+        </script>
+</head>
+<body>
+    
+</body>
+</html>

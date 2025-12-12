@@ -1,0 +1,26 @@
+<html>
+<head>
+<script>
+//variable declared by var can be used befor its declared,
+// the default value will be undefined
+// while variable declared by let cannot be used befor initalized
+/*
+var variables are hoisted with a default value of undefined, 
+which makes them accessible before their line of declaration
+But, let variables are hoisted without a default initialization. 
+So when you try to access such variables, instead of getting undefined, 
+or variable is not defined error, 
+you get cannot access variable before initialization.
+*/
+document.write(c);//undefined
+var c=40;
+document.write(c);//40
+
+document.write(u);//// ReferenceError: can't access 'u' before initialization
+let u = "hi";
+document.write(u);  // لن يعمل هذا الكود
+//=============================================================================
+//Variables declared with var can have a global or local scope. 
+//Global scope is for variables declared outside functions, 
+//while local scope is for variables declared inside functions.
+</script>

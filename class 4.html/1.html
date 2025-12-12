@@ -1,0 +1,15 @@
+<html>
+<head>
+<script>
+ //User can re-declare the same variable using var 
+ //but we cannot re-declare the same variable in same block using let 
+var x = 1;
+var x="ali"; // No error
+document.write(x);
+let z=2;
+//let z=4;//SyntaxError: Identifier 'z' has already been declared
+document.write(z);
+//let x = 30;//SyntaxError: Identifier already declared
+z=5;// correct... can be reassigned new value
+document.write(z);
+</script>

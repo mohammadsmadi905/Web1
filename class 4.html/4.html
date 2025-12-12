@@ -1,0 +1,25 @@
+
+<script>
+/*
+variables declared with let can have a global, local, or block scope. 
+Block scope is for variables declared in a block. 
+A block in JavaScript involves opening and closing curly braces:
+{
+  // a block
+}
+You can find blocks in if, loop, switch,functions and a couple of other statements. 
+Any variables declared in such blocks with the let keyword will have a block scope. 
+Also, you can't access these variables outside the block
+
+*/
+
+let a=20;// global scope
+{
+var x = 40;  // globally scoped - أي متغير عام
+let y = 90;  // block scope..not allowed to be globally scoped - ليس متغير عام
+document.write(y);// correct..Block scope
+}
+document.write(x); // 40
+//document.write(y); // ReferenceError: y is not defined
+document.write(a+3);//23
+</script>

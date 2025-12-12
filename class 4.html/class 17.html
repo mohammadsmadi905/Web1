@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+<script>
+
+
+let x=2;
+document.write(x);//2
+{
+document.write(x);//2
+    x++;
+document.write(x);//3
+}
+document.write(x);//3
+
+
+    /*
+let x=2;
+document.write(x);//2
+{//is not child
+let x=3;
+document.write(x);//3
+     {//child
+    document.write(x);//3
+    x++;
+     }
+document.write(x);//4
+}
+document.write(x);//2
+*/
+
+  /*
+for(let i=1;i<3;i++)
+document.write(i);//1 2 
+document.write(i);//undefined
+*/
+/*
+for(var i=1;i<3;i++)
+document.write(i);//1 2 
+document.write(i);//3
+*/
+/*
+let x=2;//var is global
+document.write(x);//2
+{ 
+    document.write(x);// error
+let x=5;
+x++;
+document.write(x);//
+}
+document.write(x);//
+*/
+
+/*
+let x=2;//var is global
+document.write(x);//2
+{
+let x=5;
+x++;
+document.write(x);//6
+}
+document.write(x);//2
+*/
+
+/*
+var x=2;//var is global
+document.write(x);//2
+{
+var x=5;
+x++;
+document.write(x);//6
+}
+document.write(x);//6
+*/
+/*
+var x=2;
+let x=5;
+document.write(x);//error
+*/
+/*
+let x=2;
+let x=5;
+document.write(x);//error
+*/
+
+/*
+var x=2;
+var x=5;
+document.write(x);//5
+*/
+
+/*
+document.write(X);//undefined
+var x=2;
+document.write(x);//2
+*/
+
+/*
+document.write(X);
+let x=2;
+*/
+
+
+
+
+
+</script>
+
+</head>
+<body>
+    
+</body>
+</html>

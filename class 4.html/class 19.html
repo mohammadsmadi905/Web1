@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+      <script>
+
+var x=[2,5,10];
+var y=7;
+document.write("x="+x+"<br>y="+y);//[2,5,10] 7
+function fun1(a,b){//array by reeferins
+    for(var i=0;i<a.length;i++)
+    a[i]+=2;
+b+=4;
+document.write("a="+a+"<br>b="+b);//[4,7,12] 11
+
+}
+fun1(x,y);
+document.write("x="+x+"<br>y="+y);//[4,7,12] 7
+
+/*
+//write a function (av) 
+function av(){
+var a1=parseInt(prompt("a1"));
+var a2=parseInt(prompt("a2"));
+var a3=parseInt(prompt("a3"));
+document.write((a+b+c)/3);
+}
+av();
+//var x=av(a1,a2,a3);// logical error
+*/
+
+
+/*
+//write a function (av) that accept 3 numbers , return avarage
+function av(a,b,c){// var sentex error   a=1 b=2 c=3   avarage=2
+return(a+b+c)/3;//number ok but string will edmghm
+}
+//av(1,2,3);// logical error
+var x=av(1,2,3);
+document.write(x+"<br>");
+document.write(av(1,2,3));
+*/
+      </script>
+</head>
+<body>
+    
+</body>
+</html>

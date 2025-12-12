@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+<script>
+var x=1;
+var sum=0;
+b1:for(var i=1;i<=3;i++)//1/2/3    begning
+    for(var j=1;j<3;j++){//1  after that   2  3
+sum+=(i+j);//2/5/9/14/20
+if(sum<8)continue b1;
+document.write(sum+"<br>");//9 /14/20  
+    }
+
+    /*
+while(x<5){
+sum=sum+x;
+++x;
+if(sum<6)continue;
+document.write(sum+"<br>");
+}
+*/
+
+/*while(x<5){
+sum=sum+x;
+++x;
+if(sum>6)break;
+document.write(sum+"<br>");
+}
+*/
+
+
+/*while(x<5){
+sum=sum+x;
+++x;
+}
+document.write(sum+"<br>");*/
+
+
+//while(x>5){//will nit do anything
+//sum+=x;
+//}
+
+//while(x<=5)//infint loop
+//sum+=x;
+
+/*
+var sum=0;
+a1:for(var i=1;i<=3;i++)//1 / 2  /  3
+    for(var j=1;j<3;j++)//1 / 2 / 1  /1
+{
+sum+=(i+j);//2  / 5 / 8  / 12
+if(sum>6) break;
+document.write(sum+"<br>");//  2   5
+}
+document.write(i+"<br>");
+document.write(j);
+
+*/
+    //for(var i=20;i<=70;i+=5)
+//document.write("<p style='font-size:"+i+"pt';>web</p>");
+
+
+</script>
+
+
+</head>
+<body>
+    
+</body>
+</html>

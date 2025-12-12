@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+          <script>
+         // document.getElementById("a").innerText="ali";error if we does mot have onroll
+         function test(){
+document.getElementById("a").style.color="red";// if we wont somthinng like <span> we should use innerHtml
+          document.getElementById("a").innerHtml="<span>ali</span>";//ali
+          document.getElementById("a").innerText="<span>ali</span>";//<span>ali</span>
+          document.getElementById("a").src="";
+          document.getElementById("a").style.height="200px";
+          document.getElementById("a").style.width="200px";
+          }
+          /*
+var x=5;//global x=5   ebdate global 11
+var y=2;//global y=2  ebdate global 4
+document.write("global at first x="+x+"<br>y="+y+"<br>");// x=5  y=2
+function fun1(a,b){// 5 , 2
+  var x=10;//local x=10 
+  x+=a;//15
+  y+=b;//global 4  ebdate global
+document.write("x="+x+"<br>y="+y+"<br>");// x=15 y=4
+}
+function fun2(d,f){// 5  4
+var y=6;//local y=6
+x+=y;// global  5+6=11  ebdate global
+y+=d+f;//6+5+4=15
+document.write("x="+x+"<br>y="+y+"<br>");// 11  15
+}
+fun1(x,y);//5,2
+fun2(x,y);//5,4
+document.write("global at end x="+x+"<br>y="+y+"<br>");// 11 4
+//document.write(" a="+a+"<br>b="+b+"<br>");//sentix error
+*/
+  </script>
+</head>
+<body onload="text()"><!-- if we add onload we will not have error-->
+    <!-- <script>  document.getElementById("a").innerText="ali";</script>   error becouse scribt before p but wn need id !!!!-->
+    <p id="a"> </p>
+    <script>document.getElementById("a").innerText="ali";</script>
+</body>
+</html>
