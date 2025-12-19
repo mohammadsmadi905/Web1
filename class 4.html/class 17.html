@@ -3,17 +3,19 @@
 <head>
     <title>Document</title>
 <script>
-
-
+for(var i=0;i<10-1;i++){
+    document.write(i);
+}
+/*
 let x=2;
 document.write(x);//2
-{
+{child
 document.write(x);//2
     x++;
 document.write(x);//3
 }
 document.write(x);//3
-
+*/
 
     /*
 let x=2;
@@ -30,16 +32,21 @@ document.write(x);//4
 document.write(x);//2
 */
 
+  
+
   /*
 for(let i=1;i<3;i++)
 document.write(i);//1 2 
-document.write(i);//undefined
+document.write(i);// error 
+document.write(2);
 */
+
 /*
 for(var i=1;i<3;i++)
 document.write(i);//1 2 
 document.write(i);//3
 */
+
 /*
 let x=2;//var is global
 document.write(x);//2
@@ -97,12 +104,19 @@ document.write(x);//2
 */
 
 /*
-document.write(X);
+document.write(X);//error
 let x=2;
+document.write(x);
 */
-
-
-
+/*
+const x =5;
+ { 
+ const x=6;
+ let out=x*2;
+  document.write("<br>out="+out);
+ } 
+ document.write("<br>x="+x);
+*/
 
 
 </script>
