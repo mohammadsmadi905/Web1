@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <script>
+    var d = new Date();
+document.write(d);
+document.write("<br>");
+// بس التاريخ واليوم
+document.write(d.toDateString());
+document.write("<br>");
+// Sun Jun 13 2021
+
+// اليوم من الشهر
+document.write(d.getDate());
+document.write("<br>");
+// 13
+
+// اليوم من الأسبوع – يبدأ من 0 وهو يوم الأحد
+document.write(d.getDay()); 
+document.write("<br>");
+// 0 Sunday, 1 Monday, ...
+
+// السنة
+document.write(d.getFullYear());
+document.write("<br>");
+// 2021
+
+// الساعات0-23document.write("<br>");
+document.write(d.getHours());
+document.write("<br>");
+// 22
+
+// الدقائق
+document.write(d.getMinutes());
+document.write("<br>");
+// 55
+
+// رقم الشهر – شهر 1 يعني 0 يناير، 1 فبراير ...
+document.write(d.getMonth());
+document.write("<br>");
+// 5
+
+// الثواني
+document.write(d.getSeconds());
+document.write("<br>");
+// 59
+
+
+// من دون الكلام اللي بين الأقواس
+document.write(d.toLocaleString());
+document.write("<br>");
+// 6/13/2021, 10:57:55 PM
+
+// يتم استدعاؤه لما تحتاج داتا تايب سريع
+document.write(d.toString());
+document.write("<br>");
+// Sun Jun 13 2021 22:58:30 GMT+0300 (Eastern European Summer Time)
+
+// بس الوقت دون التاريخ
+document.write(d.toTimeString());
+document.write("<br>");
+// 22:59:28 GMT+0300 (Eastern European Summer Time)
+</script>
+</head>
+<body>
+    
+</body>
+</html>

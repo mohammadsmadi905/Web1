@@ -5,9 +5,10 @@
     <script>
         /* function test(){
       var pic=['1.jpg','2.jpg','3.jpg','4.jpg','5.jpg'];
-       var x=Math.floor(Math.random()*7+1);
+       var x=Math.floor(Math.random()*4);
      document.getElementById("a").src=pic[x];
 }*/
+
 /*
 function test(a){
     var x=parseInt(document.getElementById("no1").value);
@@ -19,7 +20,9 @@ case '-':document.getElementById("r").value=x-y;break;
 case '*':document.getElementById("r").value=x*y;break;
 case '/':document.getElementById("r").value=x/y;break;
 }
-}*/
+}
+*/
+/*
 function test(){
     var cost=0;
 var b1=parseInt(document.getElementById("c1").value);
@@ -32,10 +35,11 @@ cost+=b2;
   if(document.getElementById("c3").checked)
 cost+=b3;
 document.getElementById("a").innerText="cost="+cost;
-}
+}*/
     </script>
 </head>
 <body>
+  <!--
       <form name ="f1">
 <label for="">select books</label><br>
 <input type="checkbox" value="10" id="c1"/> html <br>
@@ -44,7 +48,8 @@ document.getElementById("a").innerText="cost="+cost;
 <input type="button"value="COST" onclick="test()">
   </form>
   <p id="a"></p>
-    <!--
+  -->
+  
     <form name ="f1">
 <label for="">no1</label>
 <input type="text"id="no1">
@@ -52,14 +57,12 @@ document.getElementById("a").innerText="cost="+cost;
 <input type="text" id="no2">
 <br>
 <label for="">resulte</label>
-
-
 <input type="text" id="r">
 <input type="button" value="+" onclick="test('+')">
 <input type="button" value="-" onclick="test('-')">
 <input type="button" value="*" onclick="test('*')">
 <input type="button" value="/" onclick="test('/')">
     </form>
-    -->
+
 </body>
 </html>

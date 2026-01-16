@@ -7,7 +7,21 @@ i{ color: chartreuse;}
 .c1{color: darkgreen;}
 p.c3{color:bisque;}
 .c2{color:deeppink; text-decoration:underline;}
+p.right {
+  text-align: right;     /* محاذاة لليمين */
+}
 
+p.center {
+  text-align: center;    /* محاذاة في المنتصف */
+}
+
+p.left {
+  text-align: left;      /* محاذاة لليسار */
+}
+
+p.indent {
+  text-indent: 40px;     /* إزاحة أول سطر بمقدار 40px */
+}
     </style>
 </head>
 <body>
@@ -25,6 +39,17 @@ p.c3{color:bisque;}
 	<strong><em>hi</em></strong>
 	<i>all</i>
 	<em>hi</em>
+
+    <h2>text-align examples:</h2>
+<p class="right">This text is aligned to the right.</p>
+<p class="center">This text is centered.</p>
+<p class="left">This text is aligned to the left (default).</p>
+
+<h2>text-indent example:</h2>
+<p class="indent">
+  This paragraph has an indentation at the beginning of the first line.
+  Notice how the first line starts a bit to the right compared to the rest of the lines.
+</p>
     <!--
     *text-align: right;
 center;
@@ -38,6 +63,7 @@ bolder;
 
 font-family: Arial, Helvetica, sans-serif;
 Background-color
+color
     -->
 </body>
 </html>

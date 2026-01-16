@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+  
+<script type="text/javascript">
+/*
+var x=prompt("");
+for(var i=0;i<=x.length;i++)
+document.write(x.substr(0,i)+"<br>");
+*/
+var str="C++!";
+
+document.write(str.length + "<br />");
+document.write(str + "<br />"); // C++!
+document.write(str[1] + "<br />");//+
+document.write(str[5] + "<br />");//undefined
+//str=str.replace("++","#.net");
+//document.write(str); //C#.net!
+document.write("<br/>");/*ask your frend*/
+document.write(str);
+document.write("<br/>");
+
+str=str.replace("+","#.net");
+document.write(str);
+document.write("<br/>");
+str=str.replace("k","#.net");//but we dint have k becouse of that it still the same
+document.write(str);
+document.write("<br/>");
+document.write("<br/>");
+document.write("<br/>");
+
+
+var x="Hi every body";
+document.write(x.charAt( 4 )+"<br/>");          // v
+document.write(x.charCodeAt( 4 )+"<br/>");      //118    askecode
+document.write(x.concat(" enjoy your")+"<br/>");//Hi every body enjoy your
+document.write(x);
+document.write("<br/>");
+document.write("<br/>");
+document.write("<br/>");
+
+
+document.write(x.indexOf("every")+"<br/>");     //3
+document.write(x.indexOf("Every")+"<br/>");     //-1  that is mean does not exist
+document.write(x.indexOf("every",5)+"<br/>");   //-1
+document.write(x.indexOf("every",2)+"<br/>");   //3
+document.write(x.indexOf("every",3)+"<br/>");  //3
+document.write(x.lastIndexOf("every")+"<br/>");   //3
+document.write(x.lastIndexOf("every",2)+"<br/>");   //-1 ->   (hi )  what comelar see
+document.write("<br/>");
+document.write("<br/>");
+document.write("<br/>");
+
+
+document.write(x.split("")+"<br/>");   //H,i, ,e,v,e,r,y, ,b,o,d,y
+document.write(x.split(" ")+"<br/>");   //Hi,every,body
+document.write(x.split(";")+"<br/>");   //Hi every body
+document.write(x.split("\n")+"<br/>");   //Hi every body
+document.write(x.split("e")+"<br/>");//Hi ,v,ry body
+document.write(x[3] + "<br />");//
+var z=x[3] ;
+var e=x.split("e");
+document.write(z+"<br/>");
+document.write(e+"<br/>");
+
+
+document.write("<br/>");
+document.write("<br/>");
+
+document.write(x.split(" ")+"<br/>");
+var b=x.split(" ");
+document.write(b[1]);
+document.write("<br/>");
+var b=x.split(":");
+document.write(b[0]);
+document.write("<br/>");
+document.write(b[1]);
+document.write("<br/>");
+document.write("<br/>");
+document.write("<br/>");
+
+
+
+
+
+document.write(x.split(" ")[2]+"<br/>");   //body
+document.write(x.split(";")[2]+"<br/>");   //undefined
+document.write(x.substr(4)+"<br/>");   //very body
+document.write(x.substr(4,3)+"<br/>");   //ver 
+document.write(x.substring(4)+"<br/>");   //very body
+document.write(x.substring(4,7)+"<br/>");   //ver to 6 not 7
+document.write(x.toUpperCase()+"<br/>");   //HI EVERY BODY
+document.write(x.toLowerCase()+"<br/>");   //hi every body
+document.write(x.substr(4,4).toUpperCase()+"<br/>");   //VERY
+document.write("<br/>");
+document.write("<br/>");
+document.write("<br/>");
+
+
+
+
+
+
+
+document.write(Math.abs(-3.5)+"<br/>");  //3.5
+document.write(Math.abs(3)+"<br/>");  //3
+document.write(Math.ceil(3.5)+"<br/>");  //4
+document.write(Math.ceil(-3.5)+"<br/>");  //-3
+document.write(Math.floor(3.5)+"<br/>");  //3
+document.write(Math.floor(-3.5)+"<br/>");  //-4
+document.write(Math.round(3.5)+"<br/>");  //4
+document.write(Math.round(-3.5)+"<br/>");  //-3
+document.write(Math.round(-3.6)+"<br/>");  //-4
+document.write(Math.round(-3.4)+"<br/>");  //-3
+document.write(Math.cos(0)+"<br/>");  //1.0
+document.write(Math.sin(0)+"<br/>");  //0
+document.write(Math.tan(0)+"<br/>");  //0
+document.write(Math.exp(1)+"<br/>");  //2.718281828459045
+document.write(Math.log(2.718281828459045)+"<br/>");  //178
+document.write(Math.max(9,6)+"<br/>");  //9
+document.write(Math.min(9,6)+"<br/>");  //6
+document.write(Math.pow(3,2)+"<br/>");  //9
+document.write(Math.sqrt(9)+"<br/>");  //3
+document.write(Math.min(Math.pow(3,2),Math.max(5,6))+"<br/>");//6
+
+</script>
+</head>
+<body>
+    
+</body>
+</html>
